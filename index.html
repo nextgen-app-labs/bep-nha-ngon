@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bếp Nhà Ngon - Công Thức Món Ngon Mỗi Ngày</title>
+    <meta name="description" content="Tải ngay Bếp Nhà Ngon để khám phá hàng ngàn công thức nấu ăn ngon, đơn giản và chuẩn vị cho bữa cơm gia đình bạn.">
+    <!-- Tailwind CSS để tối ưu giao diện nhanh, mượt -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-amber-50 text-slate-800 antialiased">
+
+    <!-- Header / Navigation -->
+    <header class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <!-- Bạn có thể thay đổi link ảnh logo ở đây -->
+            <div class="w-10 h-10 bg-orange-500 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-md">🍳</div>
+            <span class="text-xl font-bold text-slate-900 tracking-tight">Bếp Nhà Ngon</span>
+        </div>
+        <a href="https://play.google.com/store/apps/details?id=com.nymdev.bepnhangon" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-5 py-2 rounded-full transition text-sm shadow-md">
+            Tải Ứng Dụng
+        </a>
+    </header>
+
+    <!-- Hero Section (Khu vực chính thu hút người dùng khi mới vào trang) -->
+    <section class="max-w-6xl mx-auto px-4 py-12 md:py-20 grid md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6 text-center md:text-left">
+            <span class="bg-orange-100 text-orange-700 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Ứng dụng nấu ăn hàng đầu</span>
+            <h1 class="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
+                Hôm nay ăn gì? <br>Để <span class="text-orange-500">Bếp Nhà Ngon</span> lo!
+            </h1>
+            <p class="text-lg text-slate-600 max-w-md mx-auto md:mx-0">
+                Khám phá kho tàng hàng ngàn công thức nấu ăn chuẩn vị, dễ làm từ các đầu bếp gia đình. Biến mọi bữa ăn thành niềm vui trọn vẹn.
+            </p>
+            
+            <!-- Nút Tải Ứng Dụng Chạy Quảng Cáo -->
+            <div class="pt-4 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                <a href="https://play.google.com/store/apps/details?id=com.nymdev.bepnhangon" class="bg-slate-900 hover:bg-slate-800 text-white flex items-center justify-center gap-3 px-8 py-3.5 rounded-xl transition shadow-lg group">
+                    <!-- Icon Google Play -->
+                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                        <path d="M3,5.27V18.73L16.55,12L3,5.27M17.87,11.33L19.5,12.16L17.87,13L16.89,12.16L17.87,11.33M3,3.41L17.14,10.47L15.47,12L3,3.41M3,20.59L15.47,12L17.14,13.53L3,20.59Z"/>
+                    </svg>
+                    <div class="text-left">
+                        <p class="text-xs uppercase opacity-80">Tải về trên</p>
+                        <p class="text-sm font-semibold -mt-1">Google Play</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Ảnh minh họa ứng dụng (Mockup điện thoại) -->
+        <div class="relative flex justify-center">
+            <div class="absolute -inset-1 bg-gradient-to-r from-orange-400 to-amber-400 rounded-full blur-3xl opacity-20 w-72 h-72 mx-auto top-10"></div>
+            <!-- Thay bằng link ảnh chụp màn hình ứng dụng của bạn để tăng độ chuyển đổi -->
+            <div class="relative w-64 h-[500px] bg-slate-900 rounded-[40px] shadow-2xl border-8 border-slate-900 overflow-hidden">
+                <div class="w-full h-full bg-orange-100 flex flex-col items-center justify-center text-center p-6">
+                    <span class="text-6xl mb-4">📱</span>
+                    <h3 class="font-bold text-slate-800 text-lg">Bếp Nhà Ngon</h3>
+                    <p class="text-xs text-slate-500 mt-2">Giao diện thông minh, dễ dàng tìm kiếm món ăn yêu thích</p>
+                    <div class="mt-8 bg-white p-3 rounded-xl shadow-sm w-full text-left text-xs space-y-2">
+                        <div class="font-semibold text-orange-500">⭐ Món ngon hôm nay:</div>
+                        <div class="bg-slate-100 h-3 rounded w-3/4"></div>
+                        <div class="bg-slate-100 h-3 rounded w-full"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section (Các tính năng nổi bật) -->
+    <section class="bg-white py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-slate-900 mb-12">Tại sao bạn nên chọn Bếp Nhà Ngon?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Tính năng 1 -->
+                <div class="p-6 bg-amber-50/50 rounded-2xl border border-amber-100 text-center space-y-3">
+                    <div class="w-12 h-12 bg-orange-500 text-white rounded-xl flex items-center justify-center mx-auto text-xl shadow-md">📖</div>
+                    <h3 class="font-bold text-lg text-slate-900">Công thức đa dạng</h3>
+                    <p class="text-slate-600 text-sm">Từ món chay, món mặn đến các món bánh, thức uống giải nhiệt cho cả nhà.</p>
+                </div>
+                <!-- Tính năng 2 -->
+                <div class="p-6 bg-amber-50/50 rounded-2xl border border-amber-100 text-center space-y-3">
+                    <div class="w-12 h-12 bg-orange-500 text-white rounded-xl flex items-center justify-center mx-auto text-xl shadow-md">⚡</div>
+                    <h3 class="font-bold text-lg text-slate-900">Hướng dẫn chi tiết</h3>
+                    <p class="text-slate-600 text-sm">Từng bước thực hiện trực quan kèm hình ảnh rõ ràng giúp bạn nấu ăn không bao giờ lỗi.</p>
+                </div>
+                <!-- Tính năng 3 -->
+                <div class="p-6 bg-amber-50/50 rounded-2xl border border-amber-100 text-center space-y-3">
+                    <div class="w-12 h-12 bg-orange-500 text-white rounded-xl flex items-center justify-center mx-auto text-xl shadow-md">🛒</div>
+                    <h3 class="font-bold text-lg text-slate-900">Lên lịch đi chợ</h3>
+                    <p class="text-slate-600 text-sm">Tự động thống kê nguyên liệu cần mua dựa trên thực đơn bạn đã chọn lựa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 text-center py-8 text-xs border-t border-slate-900">
+        <p>&copy; 2026 NextGen App Labs. All rights reserved.</p>
+        <p class="mt-2"><a href="#" class="hover:underline">Chính sách bảo mật</a> | <a href="#" class="hover:underline">Điều khoản dịch vụ</a></p>
+    </footer>
+
+</body>
+</html>
